@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0f;
+  --card: #111118;
+  --border: rgba(255, 255, 255, 0.08);
+  --accent: #6ee7f7;
+}
+
+body {
+  background: var(--bg);
+  color: #e2e8f0;
+  font-family: "Inter", sans-serif;
+}
+
+/* สกรอลบาร์ */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+
+/* ใช้สำหรับ Modal fade-in */
+@keyframes fade-in {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.animate-fade-in { animation: fade-in 0.2s ease-out; }
